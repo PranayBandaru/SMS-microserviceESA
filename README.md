@@ -74,8 +74,6 @@ This will create an inbound SMS.
 }
 ```
 
-- For unsuccessful responses, refer to ```Design Specifications.pdf``` document. The responses this app gives exactly syncs with those.
-
 ### Post an outbound SMS
 This API will be exposed to the client.
 
@@ -109,10 +107,8 @@ This will create an inbound SMS.
 }
 ```
 
-- For unsuccessful responses, refer to ```Design Specifications.pdf``` document. The responses this app gives exactly syncs with those.
-
 ### Default response
-This will be the default response for all other methods and configurations
+This is the default response for all other methods and configurations which have not being used/enabled.
 
 Status Code - 405 
 ```bash
