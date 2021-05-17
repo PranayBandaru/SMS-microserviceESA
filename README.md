@@ -49,9 +49,7 @@ $ npm run test
 ###### Note
 A key named ```app-secret``` must be passed with the value ```Bearer 1234567890``` in the headers for each request for successful authorization.
 
-## APIs and their behavior
-### SMS Microservice
-#### Post an inbound SMS
+### Post an inbound SMS
 This API will be exposed to the client.
 
 - Method – POST
@@ -78,7 +76,7 @@ This will create an inbound SMS.
 
 - For unsuccessful responses, refer to ```Design Specifications.pdf``` document. The responses this app gives exactly syncs with those.
 
-#### Post an outbound SMS
+### Post an outbound SMS
 This API will be exposed to the client.
 
 - Method – POST
@@ -113,7 +111,7 @@ This will create an inbound SMS.
 
 - For unsuccessful responses, refer to ```Design Specifications.pdf``` document. The responses this app gives exactly syncs with those.
 
-#### Default response
+### Default response
 This will be the default response for all other methods and configurations
 
 Status Code - 405 
