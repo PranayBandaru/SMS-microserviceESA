@@ -13,22 +13,22 @@ const limiter = rateLimit({
 });
 
 // create App function
-module.exports = function(app) {
-    var smsList = require('../controllers/controller');
+module.exports = function (app) {
+    var smsList = require('./controller');
 
     // SMS Routes
 
     // inbound request endpoint
     app
-    .route("/inbound/sms")
-    .post(smsList.inboundSMS)
+        .route("/inbound/sms")
+        .post(smsList.inboundSMS)
 
     // outbound request endpoint
     app
-    .route("/outbound/sms")
-    .post(smsList.outboundSMS, limiter)
+        .route("/outbound/sms")
+        .post(smsList.outboundSMS, limiter)
 
     // default response
     app
-    .use(smsList.defaultResponse)
+        .use(smsList.defaultResponse)
 };
